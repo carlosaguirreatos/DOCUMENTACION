@@ -1,0 +1,40 @@
+cuando queremos meter una nueva configuración que no podamos meter en el application.yml lo hacemos en le package configuration (ejemplo el SecurityConfiguration)
+
+
+RUTA PARA EL POM.XML
+
+cuando te dé fallo al hacer mvn clean install puede que tuvieras EL PUTO URA metido. Quítalo, te cargas el .m2 de tu usuario (c/usuarios/a630460)
+vuelve a abrir el STS , la terminal, te vas a la ruta C:\Users\a630460\Documents\workspace-sts-3.9.4.RELEASE\backendninja y vuelves a construir a ver 
+qué pasa.
+
+Una vez construido refrescamos la aplicación en el STS con el botón derecho
+
+C:\Users\a630460\Documents\workspace-sts-3.9.4.RELEASE\backendninja
+
+cuando un método tiene un @PostMapping le vendrá un @ModelAttribute
+
+cuando un método tiene un @GetMapping le tendrá que entrar como parámetro algo con anotación @RequestParam
+Esto pasa cuando desde la vista se redirecciona al método con un parámetro (por ejemplo <a href="#" th:href="@{/login?logout}">)
+También cuando desde el controlador ser redirecciona desde un método (por ejemplo return "redirect:/login?error";)
+Ambos redireccionan al método anotado con el @GetMapping("/login") y le envían un parámetro
+ 
+cuando abrimos el navegador y ponemos localhost:8080/logincheck
+
+en realidad la vista puede ser pro ejemplo la contact.html. Por qué no pone eso? por la anotación OJITOOOO
+
+
+Cuando trabajamos con vistas igual no nos interesa que algún dato de alguna entidad aparezca en la misma. Por eso creamos también un model de cada clase
+
+
+con los repository nos sirven para obtener toda la funcionalidad y métodos de JPA ya que son interfaces que extienden del JpaRepository
+a cada uno de los repositorios trabaja sobre una clase que será una entidad y el serializable
+
+LOS controles rest se utilizan cuando se utiliza en la parte front que no es una tecnología d emontar una plantilla sino que es el cliente el que las monta
+como en el caso de ANGULAR. el REst controller devuelve un json de datos que usa angular para montar su vista
+
+
+
+SPRING LOADED metes un plugin en el pom.xml que te lo buscas la vida porque le hijoputa no pone la ruta para sacarlo de la web de spring... (video 070)
+sirve para poder modificar plantillas y que se produzca el cambio sin tener que volver a arrancar la aplicación. 
+
+Spring Batch es para tareas repetitivas (util para envío de emails o eliminar datos en bbdd,  etc)

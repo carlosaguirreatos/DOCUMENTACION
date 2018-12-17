@@ -1,0 +1,21 @@
+cuando es para decir un redireccionamiento con el action de un formulario 
+		th:action="@{}"  y se refire al @PostMapping etc
+		Es decir , redirecciona a un método con una anotación @PostMapping, no a otra vista
+
+cuando es un objeto que gestiona el formulario o que vamos a pintar... (por ejemplo cuando rellenamos los inputs desde un listado) 
+		th:object="${}" es el objeto del modelattribute que tiene el postmapping citado
+
+cuando es un atributo de un objeto (name del usercredentials por ejemplo) pues 
+ 		th:field="*{}"
+
+
+para pasar un parámetro por GET ... <a href="#" th:href="@{/contacts/removecontact?id=__${contact.id}__}">
+
+
+th:action="@{/login}"
+th:href="${/login}"
+th:value="*{firstname}"
+th:text="${contact.lastname}"
+
+
+@GetMapping({"/loginsuccess", "/"})   // tanto el /loginsuccess como / entrarán por aquí y se anota así, los dos entre llaves
